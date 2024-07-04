@@ -101,7 +101,7 @@ const Contact = () => {
        </form>
        {/* div details */}
        <div>
-         <div className="flex flex-col gap-4 md:my-[50%] px-12">
+         <div className="flex flex-col gap-4 md:my-[50%] md:px-12">
            <div className="flex items-center gap-2">
              <span className="rounded-md text-3xl p-3 bg-[#00C0FF] ">
                <FaMessage />
