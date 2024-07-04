@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Georama:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.accent {
+    color: #00ff99;
+}
+.bg{
+ background-color: #030712;
+}
+.social{
+ background-color: #00e187;
+}
+.radius{
+    border-radius: 58% 42% 27% 73% / 29% 32% 68% 71%  ;
+ border: #00e187 dashed;
+     
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
