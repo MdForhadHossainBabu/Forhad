@@ -75,6 +75,8 @@ const Contact = () => {
            </label>
            <input
              className="py-2 px-4  mx-2 rounded font-geo bg-slate-900 text-white outline-none"
+
+             
              placeholder="Type Your Full Name"
              type="number"
              {...register('number')}

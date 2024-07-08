@@ -59,7 +59,7 @@ const Services = () => {
            <h1 className="text-3xl font-bold font-geo mt-7 text-balance">
              MongoDB Database
            </h1>
-           <p className="text-balance px-4 mt-5 text-slate-300">
+           <p className="text-balance px-4 mt-5 text-slate-1 00">
              MongoDB is a database that stores data in flexible, JSON-like
              documents. It supports dynamic schemas, horizontal scaling, and
              high availability, making it ideal for handling unstructured or
