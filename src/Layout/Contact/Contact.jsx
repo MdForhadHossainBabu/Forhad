@@ -21,7 +21,7 @@ const Contact = () => {
        })
        .then(
          () => {
-          //  console.log('SUCCESS!');
+           console.log('SUCCESS!');
             Swal.fire({
           icon: 'success',
           title: 'Your message already sent',
