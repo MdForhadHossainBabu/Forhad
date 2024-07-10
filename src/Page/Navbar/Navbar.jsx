@@ -97,11 +97,11 @@ const Navbar = () => {
      </div>
      {/* resume me */}
      <div className="bg py-4 pt-20 my-[1px] md:px-20 px-11" id="services">
-    <Services/>
+       <Services />
      </div>
      {/* about me */}
-     <div className="bg py-4 my-[1px] md:px-20 px-11 " id="about" >
-    <Resume/>
+     <div className="bg py-4 my-[1px] md:px-20 px-11 " id="about">
+       <Resume />
      </div>
      {/* resume me */}
      <div className="bg py-4 my-[1px]" id="resume">
@@ -129,9 +129,17 @@ const Navbar = () => {
      </div>
      {/* Open the modal using document.getElementById('ID').showModal() method */}
 
-     <dialog id="modal" className="modal">
-       <div className="modal-box  w-full">
-         <video className="w-full h-full" src={v1} controls></video>
+     <dialog id="modal" className="modal w-[100%] h-full">
+       <div className="border w-8/12 h-[62vh] absolute">
+         <iframe
+          className="w-full h-full"
+           src="https://www.youtube.com/embed/z0n1aQ3IxWI?si=yga6WfsbuGXkqgv3"
+           title="YouTube video player"
+       
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+           
+           allowfullscreen
+         ></iframe>
        </div>
        <form method="dialog" className="modal-backdrop">
          <button>close</button>
