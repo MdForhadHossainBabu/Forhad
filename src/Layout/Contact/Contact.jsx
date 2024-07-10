@@ -58,6 +58,7 @@ const Contact = () => {
              placeholder="Type Your Full Name"
              type="text"
              name="name"
+             required
              id=""
            />
          </div>
@@ -68,6 +69,7 @@ const Contact = () => {
              placeholder="Type Your Email"
              type="text"
              name="email"
+             required
              id=""
            />
          </div>
