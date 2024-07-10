@@ -1,44 +1,46 @@
-
-import { useForm } from "react-hook-form";
 import { FaLocationArrow, FaPaperPlane, FaWhatsapp } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 import Swal from "sweetalert2";
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
  
-  const { register, handleSubmit, reset } = useForm();
-  const onSubmit = (data) => {
-    // console.log(data);
-  fetch('https://email-system-ecru.vercel.app/email', {
-    method: 'POST',
-    headers: {
-      'content-type': 'application/json',
-    },
-    body: JSON.stringify(data),
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      // console.log(data)
-      if (data.insertedId) {
-        reset();
-        Swal.fire({
+
+
+
+   const form = useRef();
+
+   const sendEmail = (e) => {
+     e.preventDefault();
+
+     emailjs
+       .sendForm('service_ls7f7ew', 'template_rm8k0af', form.current, {
+         publicKey: 'fH0K8STDCj74dUg49',
+       })
+       .then(
+         () => {
+          //  console.log('SUCCESS!');
+            Swal.fire({
           icon: 'success',
           title: 'Your message already sent',
           showConfirmButton: false,
           timer: 1500,
         });
-      }
-    });
-  
-  
- };
+         },
+         (error) => {
+           console.log('FAILED...', error.text);
+         }
+       );
+   };
  return (
    <>
      <div className="text-white grid grid-cols-1 md:grid-cols-3 gap-12 py-12 rounded">
        <form
          className="bg-slate-700 md:col-span-2 text-black"
-         onSubmit={handleSubmit(onSubmit)}
+         ref={form}
+         onSubmit={sendEmail}
        >
          <div className="px-2 my-3">
            <h1 className="text-5xl font-bold font-geo text-white py-2">
@@ -55,7 +57,7 @@ const Contact = () => {
              className="py-2 px-4  mx-2 rounded font-geo bg-slate-900 text-white outline-none"
              placeholder="Type Your Full Name"
              type="text"
-             {...register('name')}
+             name="name"
              id=""
            />
          </div>
@@ -65,7 +67,7 @@ const Contact = () => {
              className="py-2 px-4  mx-2 rounded font-geo bg-slate-900 text-white outline-none"
              placeholder="Type Your Email"
              type="text"
-             {...register('email')}
+             name="email"
              id=""
            />
          </div>
@@ -75,11 +77,9 @@ const Contact = () => {
            </label>
            <input
              className="py-2 px-4  mx-2 rounded font-geo bg-slate-900 text-white outline-none"
-
-             
              placeholder="Type Your Full Name"
              type="number"
-             {...register('number')}
+             name="phone"
              id=""
            />
          </div>
@@ -91,7 +91,7 @@ const Contact = () => {
            <textarea
              className="py-2 px-4  h-32 mx-2 rounded font-geo bg-slate-900 text-white outline-none"
              placeholder="Message me!"
-             {...register('message')}
+             name="message"
              id=""
            />
          </div>
@@ -101,6 +101,8 @@ const Contact = () => {
            </button>
          </div>
        </form>
+
+      
        {/* div details */}
        <div>
          <div className="flex flex-col gap-4 md:my-[50%] md:px-12">
