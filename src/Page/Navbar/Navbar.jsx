@@ -10,6 +10,7 @@ import { LuPlay } from "react-icons/lu";
 import v1 from "../../assets/Hybrid Work Management_ Collaborate Across Teams, Workstyles & Locations..mp4" 
 import Services from "../Services/Services";
 import Resume from "../../Layout/Resume/Resume";
+import OpenModal from "../../components/Modal";
 
 
 const Navbar = () => {
@@ -119,32 +120,9 @@ const Navbar = () => {
      <div className="bg-slate-800 h-48">
        <Footer />
      </div>
-     <div className=" fixed z-20 text-white bottom-3 left-4">
-       <button
-         onClick={() => document.getElementById('modal').showModal()}
-         className=" p-2 rounded-full flex items-center justify-center bg-[#00C0FF]"
-       >
-         <LuPlay className="text-3xl" />
-       </button>
+     <div className=" fixed z-500 text-white bottom-3 left-4">
+       <OpenModal />
      </div>
-     {/* Open the modal using document.getElementById('ID').showModal() method */}
-
-     <dialog id="modal" className="modal w-[100%] h-full">
-       <div className="border w-8/12 h-[62vh] absolute">
-         <iframe
-          className="w-full h-full"
-           src="https://www.youtube.com/embed/z0n1aQ3IxWI?si=yga6WfsbuGXkqgv3"
-           title="YouTube video player"
-       
-           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-           
-           allowfullscreen
-         ></iframe>
-       </div>
-       <form method="dialog" className="modal-backdrop">
-         <button>close</button>
-       </form>
-     </dialog>
    </div>
  );
 };

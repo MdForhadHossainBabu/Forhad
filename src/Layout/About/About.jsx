@@ -20,9 +20,12 @@ const About = () => {
         </p>
         <div className="flex flex-col">
           <div className="mt-14">
+            <a href="#contact">
+
             <Button className="w-10/12 mx-auto" variant="contained">
               Hire me !
             </Button>
+            </a>
           </div>
         </div>
       </div>

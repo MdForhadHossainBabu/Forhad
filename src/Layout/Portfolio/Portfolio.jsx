@@ -101,7 +101,7 @@ const Portfolio = () => {
           <p className="text-balance py-3">
             "Modern Estate Elite" could be a project name or concept for a
             high-end real estate platform or service. It aims to offer exclusive
-            properties with cutting-edge design and luxurious amenities,
+            properties with cutting-edge design and luxurious ameniti es,
             catering to affluent clients seeking upscale living solutions. 
           </p>
           <h3 className="text-xl font-jet font-bold accent">
