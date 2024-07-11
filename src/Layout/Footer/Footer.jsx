@@ -40,7 +40,7 @@ const Footer = () => {
                <FaInstagram className="text-3xl hover:text-rose-500" />
              </button>
            </a>
-           <div className="absolute md:right-24 right-12 mb-4">
+           <div className="absolute md:right-24 right-12 mb-6 flex flex-col gap-1">
              Scan Me!
              <Scanner/>
            </div>

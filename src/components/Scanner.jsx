@@ -4,7 +4,8 @@ import QRCode from "react-qr-code";
 const Scanner = () => {
  return (
    <div
-     style={{ height: 'auto', margin: '0 auto', maxWidth: 64, width: '100%' }}
+   // style={{ height: 'auto', margin: '0 auto', maxWidth: 64, width: '100%' }}
+   className="border p-1 w-20"
    >
      <QRCode
        size={256}
