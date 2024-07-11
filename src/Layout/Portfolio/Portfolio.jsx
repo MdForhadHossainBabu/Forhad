@@ -5,6 +5,7 @@ import img2 from "../../assets/2 (2).png"
 import img3 from "../../assets/3.png"
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
+import Scrollbars from "rc-scrollbars";
 
 
 const Portfolio = () => {
@@ -132,9 +133,12 @@ const Portfolio = () => {
           </div>
         </div>
 
+
+        <Scrollbars>
         <div className="border mx-auto h-[32rem] overflow-auto">
           <img src={img3} alt="" />
         </div>
+        </Scrollbars>
       </div>
     </Carousel>
   );

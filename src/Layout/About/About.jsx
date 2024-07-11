@@ -1,4 +1,5 @@
 import { Button } from '@mui/material';
+import Scrollbars from 'rc-scrollbars';
 import { FaCss3, FaHtml5 } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa6';
 import { IoLogoJavascript } from 'react-icons/io';
@@ -21,10 +22,9 @@ const About = () => {
         <div className="flex flex-col">
           <div className="mt-14">
             <a href="#contact">
-
-            <Button className="w-10/12 mx-auto" variant="contained">
-              Hire me !
-            </Button>
+              <Button className="w-10/12 mx-auto" variant="contained">
+                Hire me !
+              </Button>
             </a>
           </div>
         </div>
@@ -120,67 +120,71 @@ const About = () => {
             </div>
           </div>
         </div>
+
+            {/* <Scrollbars> */}
         <div className=" relative overflow-auto">
+          
           <button className="w-full py-1 font-geo accent bg-slate-800 absolute z-10 top-0 h-10">
             Education
           </button>
           <div className=" opacity-60 mt-16 space-y-16">
-            <div className="border-l-2 pl-4 border-[#00e187] relative mx-2">
-              <span className="border-[3px] absolute top-0 -left-[11px] bg-[#00e187] w-2 p-2 rounded-full h-4 border-[#00e187]"></span>
-              <h1 className="text-lg font-bold font-geo overflow-x-auto">
-                SSC-Secondary School certificate
-              </h1>
-              <h4 className="font-fira text-sm py-2">
-                Bagua Anantapur High School
-              </h4>
-              <span className="font-extrabold text-xl px-2 bg-opacity-80 text-slate-50 py-1 bg-[#00e187]">
-                2018-23
-              </span>
-              <p className="text-sm py-3 text-slate-50">
-                Successfully completed rigorous educational training. Gained
-                valuable skills, knowledge, and a strong academic foundation.
-                Participated actively in various learning activities.
-                Demonstrated consistent dedication to excellence. Prepared for
-                future educational and professional endeavors.
-              </p>
-            </div>
-            <div className="border-l-2 pl-4 border-[#00e187] relative mx-2">
-              <span className="border-[3px] absolute top-0 -left-[11px] bg-[#00e187] w-2 p-2 rounded-full h-4 border-[#00e187]"></span>
-              <h1 className="text-lg font-bold font-geo overflow-x-auto">
-                HSC-Secondary School certificate
-              </h1>
-              <h4 className="font-fira text-sm py-2">
-                Kurigram Collectorate College
-              </h4>
-              <span className="font-extrabold text-xl px-2 bg-opacity-80 text-slate-50 py-1 bg-[#00e187]">
-                2023-24
-              </span>
-              <p className="text-sm py-3 text-slate-50">
-                Successfully completed rigorous educational training. Gained
-                valuable skills, knowledge, and a strong academic foundation.
-                Participated actively in various learning activities.
-                Demonstrated consistent dedication to excellence. Prepared for
-                future educational and professional endeavors.
-              </p>
-            </div>
-            <div className="border-l-2 pl-4 border-[#00e187] relative mx-2">
-              <span className="border-[3px] absolute top-0 -left-[11px] bg-[#00e187] w-2 p-2 rounded-full h-4 border-[#00e187]"></span>
-              <h1 className="text-lg font-bold font-geo overflow-x-auto">
-                Complete Web Development
-              </h1>
-              <h4 className="font-fira text-sm py-2">Programming Hero</h4>
-              <span className="font-extrabold text-xl px-2 bg-opacity-80 text-slate-50 py-1 bg-[#00e187]">
-                2023-2024
-              </span>
-              <p className="text-sm py-3 text-slate-50">
-                MERN Stack Complete Web Development Completed comprehensive
-                Programming Hero course on MERN stack web development.
-                Proficient in MongoDB, Express.js, React, Node.js, and building
-                full-stack applications.
-              </p>
-            </div>
+              <div className="border-l-2 pl-4 border-[#00e187] relative mx-2">
+                <span className="border-[3px] absolute top-0 -left-[11px] bg-[#00e187] w-2 p-2 rounded-full h-4 border-[#00e187]"></span>
+                <h1 className="text-lg font-bold font-geo overflow-x-auto">
+                  SSC-Secondary School certificate
+                </h1>
+                <h4 className="font-fira text-sm py-2">
+                  Bagua Anantapur High School
+                </h4>
+                <span className="font-extrabold text-xl px-2 bg-opacity-80 text-slate-50 py-1 bg-[#00e187]">
+                  2018-23
+                </span>
+                <p className="text-sm py-3 text-slate-50">
+                  Successfully completed rigorous educational training. Gained
+                  valuable skills, knowledge, and a strong academic foundation.
+                  Participated actively in various learning activities.
+                  Demonstrated consistent dedication to excellence. Prepared for
+                  future educational and professional endeavors.
+                </p>
+              </div>
+              <div className="border-l-2 pl-4 border-[#00e187] relative mx-2">
+                <span className="border-[3px] absolute top-0 -left-[11px] bg-[#00e187] w-2 p-2 rounded-full h-4 border-[#00e187]"></span>
+                <h1 className="text-lg font-bold font-geo overflow-x-auto">
+                  HSC-Secondary School certificate
+                </h1>
+                <h4 className="font-fira text-sm py-2">
+                  Kurigram Collectorate College
+                </h4>
+                <span className="font-extrabold text-xl px-2 bg-opacity-80 text-slate-50 py-1 bg-[#00e187]">
+                  2023-24
+                </span>
+                <p className="text-sm py-3 text-slate-50">
+                  Successfully completed rigorous educational training. Gained
+                  valuable skills, knowledge, and a strong academic foundation.
+                  Participated actively in various learning activities.
+                  Demonstrated consistent dedication to excellence. Prepared for
+                  future educational and professional endeavors.
+                </p>
+              </div>
+              <div className="border-l-2 pl-4 border-[#00e187] relative mx-2">
+                <span className="border-[3px] absolute top-0 -left-[11px] bg-[#00e187] w-2 p-2 rounded-full h-4 border-[#00e187]"></span>
+                <h1 className="text-lg font-bold font-geo overflow-x-auto">
+                  Complete Web Development
+                </h1>
+                <h4 className="font-fira text-sm py-2">Programming Hero</h4>
+                <span className="font-extrabold text-xl px-2 bg-opacity-80 text-slate-50 py-1 bg-[#00e187]">
+                  2023-2024
+                </span>
+                <p className="text-sm py-3 text-slate-50">
+                  MERN Stack Complete Web Development Completed comprehensive
+                  Programming Hero course on MERN stack web development.
+                  Proficient in MongoDB, Express.js, React, Node.js, and
+                  building full-stack applications.
+                </p>
+              </div>
           </div>
         </div>
+            {/* </Scrollbars> */}
       </div>
     </div>
   );
