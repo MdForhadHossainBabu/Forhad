@@ -1,6 +1,7 @@
 import { AwesomeButton } from "react-awesome-button";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import Scanner from "../../components/Scanner";
 
 const Footer = () => {
  return (
@@ -14,7 +15,7 @@ const Footer = () => {
          <h6 className="font-mono px-12 text-slate-300">Web Developer</h6>
        </div>
        <div className="mx-auto">
-         <div className="flex items-center gap-3 mt-6">
+         <div className="flex items-center gap-3 mt-6 ">
            <a href="https://facebook.com/yesforhad" target="_blank">
              <button className=" p-2 hover:scale-110 duration-200 rounded-full  text-white bg-gray-700 hover:bg-[#00e187] hover:bg-opacity-70">
                <FaFacebook className="text-3xl text-white" />
@@ -39,6 +40,10 @@ const Footer = () => {
                <FaInstagram className="text-3xl hover:text-rose-500" />
              </button>
            </a>
+           <div className="absolute md:right-24 right-12 mb-4">
+             Scan Me!
+             <Scanner/>
+           </div>
          </div>
        </div>
      </div>

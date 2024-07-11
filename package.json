@@ -28,6 +28,7 @@
     "react-icons": "^5.2.1",
     "react-modal": "^3.16.1",
     "react-multilevel-dropdown": "^4.0.0",
+    "react-qr-code": "^2.0.15",
     "react-responsive-carousel": "^3.2.23",
     "react-simple-typewriter": "^5.0.1",
     "reoverlay": "^1.0.3",
