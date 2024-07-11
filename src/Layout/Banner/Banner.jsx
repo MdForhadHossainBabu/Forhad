@@ -14,7 +14,7 @@ const Banner = () => {
        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center px-7">
          <div className=" mx-auto border-[#00e187] pb-1  px-1 flex md:hidden lg:hidden">
            <img
-             className="w-12/12 h-[32rem] mx-auto  radius"
+             className="w-12/12 h-[32rem] mx-auto  rounded-full border-2 border-dashed border-[#00e187]"
              src={bannerImg}
              alt=""
            />
