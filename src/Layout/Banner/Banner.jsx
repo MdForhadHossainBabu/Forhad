@@ -8,7 +8,6 @@ import bannerImg from "../../assets/forhad.png";
 const Banner = () => {
  return (
    <div className="w-full h-full  md:px-20 bg text-white px-4 py-9 mt-1">
-     
      <div>
        {/* main div */}
        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center px-7">
@@ -80,8 +79,10 @@ const Banner = () => {
            {/* Download CV */}
            <div className="mt-6">
              <a
-               href="../../assets/Md-Forhad-Hossain_Cv.pdf"
-               download={'../../assets/Md-Forhad-Hossain_Cv.pdf'}
+               href="https://drive.google.com/file/d/1_QI3IqZx2xte5xVCl2aZx-e7ojenLw1A/view?usp=sharing"
+               download={
+                 'https://drive.google.com/file/d/1_QI3IqZx2xte5xVCl2aZx-e7ojenLw1A/view?usp=sharing'
+               }
              >
                <Button
                  className="flex font-fira items-center gap-2"
