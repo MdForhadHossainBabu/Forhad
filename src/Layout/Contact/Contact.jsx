@@ -44,7 +44,7 @@ const Contact = () => {
          onSubmit={sendEmail}
        >
          <div className="px-2 my-3">
-           <h1 className="text-5xl font-bold font-geo text-white py-2">
+           <h1 className="md:text-5xl text-4xl font-bold font-geo text-white py-2">
              Get In Touch
            </h1>
            <p className="text-white text-balance">
@@ -80,7 +80,7 @@ const Contact = () => {
            </label>
            <input
              className="py-2 px-4  mx-2 rounded font-geo bg-slate-900 text-white outline-none"
-             placeholder="Type Your Full Name"
+             placeholder="Type Your Number"
              type="number"
              name="phone"
              id=""
@@ -115,7 +115,7 @@ const Contact = () => {
              </span>
              <span className="flex flex-col">
                <h5 className="text-slate-200 uppercase">My Email</h5>
-               <h2 className="text-lg font-bold font-fira">
+               <h2 className="md:text-lg text-sm font-bold  font-fira">
                  developerforhad2@gmail.com
                </h2>
              </span>

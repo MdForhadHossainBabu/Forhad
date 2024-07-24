@@ -17,10 +17,10 @@ const Resume = () => {
          </h1>
          <p className="text-white/80 py-8">
            I'm Forhad Hossain, a skilled MERN stack developer. With MongoDB,
-           Express.js, React, and Node.js, I've crafted dynamic web
-           applications that captivate. From sleek interfaces to powerful backend
-           systems, I deliver unique online experiences. Let's turn your ideas
-           into exceptional digital realities.
+           Express.js, React, and Node.js, I've crafted dynamic web applications
+           that captivate. From sleek interfaces to powerful backend systems, I
+           deliver unique online experiences. Let's turn your ideas into
+           exceptional digital realities.
          </p>
        </div>
      </div>

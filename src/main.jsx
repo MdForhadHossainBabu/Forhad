@@ -1,7 +1,7 @@
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import { RouterProvider } from 'react-router-dom'
-import { router } from './Route/Route'
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './Route/Route';
 import AnimatedCursor from 'react-animated-cursor';
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -12,10 +12,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <AnimatedCursor
         innerSize={12}
         outerSize={8}
-        color="58, 180, 113"
-        outerAlpha={0.2}
-        innerScale={0.7}
-        outerScale={5}
+        color="0,234,255"
+        outerAlpha={0.6}
+        innerScale={0.2}
+        outerScale={7}
         clickables={[
           'p',
           'a',
@@ -40,12 +40,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           {
             target: '.custom',
             options: {
-              innerSize: 12,
-              outerSize: 12,
-              color: '255, 255, 255',
+              innerSize: 24,
+              outerSize: 24,
+              // color: '255, 255, 255',
+              color: 'ffff',
               outerAlpha: 0.3,
               innerScale: 0.7,
-              outerScale: 5,
+              outerScale: 12,
             },
           },
         ]}

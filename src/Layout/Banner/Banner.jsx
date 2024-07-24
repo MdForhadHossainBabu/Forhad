@@ -7,7 +7,7 @@ import bannerImg from "../../assets/forhad.png";
 
 const Banner = () => {
  return (
-   <div className="w-full h-full  md:px-20 bg text-white px-4 py-9 mt-1">
+   <div className="w-full h-full  md:px-20 bg-gradient-to-r from-rose-800 to-sky-800 text-white px-4 py-9 mt-1">
      <div>
        {/* main div */}
        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center px-7">
@@ -18,12 +18,21 @@ const Banner = () => {
              alt=""
            />
          </div>
-         <div className=" flex flex-col">
-           <h1 className="font- font-jet text-sm md:text-lg">Web Developer</h1>
-           <h1 className="md:text-4xl opacity-80 font-medium font-fira ">
-             Hello I am
-           </h1>
-           <h1 className="md:text-6xl text-4xl font-bold accent text-balance font-fira">
+         <div
+           data-aos="flip-left"
+           data-aos-easing="ease-out-cubic"
+           data-aos-duration="2000"
+           className=" flex flex-col"
+         >
+           <div>
+             <h1 className="font- font-jet text-sm md:text-lg">
+               Web Developer
+             </h1>
+             <h1 className="md:text-4xl text-sm opacity-80 font-medium font-fira ">
+               Hey I'm
+             </h1>
+           </div>
+           <h1 className="md:text-6xl text-3xl font-bold accent text-balance font-fira">
              Forhad Hossain
            </h1>
 
@@ -93,14 +102,8 @@ const Banner = () => {
              </a>
            </div>
          </div>
-         <img className="radius hidden md:flex" src={bannerImg} alt="" />
-         {/* <div className=" mx-auto border-b-4  border-x-2 border-[#00e187] pb-1 animate-pulse px-1  radius hidden md:flex lg:flex  rounded-b-full border-dashed">
-           <img
-             className="w-12/12 h-[32rem] mx-auto  rounded-b-full"
-             src={bannerImg}
-             alt=""
-           />
-         </div> */}
+         <img className="radius hidden md:flex w-2/3 mt-5" src={bannerImg} alt="" />
+         
        </div>
        {/* github counter */}
        <div className="grid grid-cols-2 md:grid-cols-4 items-center gap-4 md:mt-16">
