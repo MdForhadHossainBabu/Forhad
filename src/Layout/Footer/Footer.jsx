@@ -53,6 +53,7 @@ const Footer = () => {
      <h4 className="text-sm font-bold text-center font-geo">
        © 2024 Forhad Hossain. All Rights Reserved
      </h4>
+     the deserved it 
    </div>
  );
 };
