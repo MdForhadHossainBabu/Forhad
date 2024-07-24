@@ -7,10 +7,10 @@ import bannerImg from "../../assets/forhad.png";
 
 const Banner = () => {
  return (
-   <div className="w-full h-full  md:px-20 bg-gradient-to-r from-rose-800 to-sky-800 text-white px-4 py-9 mt-1">
+   <div className="w-full h-full  md:px-20 bg-gradient-to-r from-rose-800 to-sky-800 text-white px-4 py-9 mt-5">
      <div>
        {/* main div */}
-       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center px-7">
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-32 items-center justify-center px-7">
          <div className=" mx-auto border-[#00e187] pb-1  px-1 flex md:hidden lg:hidden">
            <img
              className="w-12/12 h-[32rem] mx-auto  rounded-full border-2 border-dashed border-[#00e187]"
